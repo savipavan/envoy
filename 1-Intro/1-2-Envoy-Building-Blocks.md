@@ -16,6 +16,8 @@ Envoy building blocks
 It all starts with the listeners. Envoy exposes listeners that are named network locations, either an IP address and a port or a Unix Domain Socket path. Envoy receives connections and requests through listeners. Consider the following Envoy configuration:
 
 static_resources:
+
+![img_1.png](img_1.png) \
 listeners:
 - name: listener_0
   address:
