@@ -15,9 +15,8 @@ Envoy building blocks
 ![img.png](img.png) \
 It all starts with the listeners. Envoy exposes listeners that are named network locations, either an IP address and a port or a Unix Domain Socket path. Envoy receives connections and requests through listeners. Consider the following Envoy configuration:
 
-static_resources:
-
 ![img_1.png](img_1.png) \
+static_resources:
 listeners:
 - name: listener_0
   address:
@@ -39,6 +38,7 @@ Envoy defines three categories of filters: listener filters, network filters, an
 
 Each request that comes in through a listener can flow through multiple filters. We can also write a configuration that selects a different filter chain based on the incoming request or connection properties.
 
+![img_2.png](img_2.png) \
 
 Filter chains
 One special, built-in network filter is called HTTP connection manager filter or HCM. The HCM filter is capable of translating from raw bytes to HTTP-level messages. It can handle access logging, generate request IDs, manipulate headers, manage route tables, and collect statistics. We'll go into more details about HCM in later lessons.
