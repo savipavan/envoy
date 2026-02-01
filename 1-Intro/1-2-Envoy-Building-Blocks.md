@@ -12,7 +12,7 @@ The diagram below shows the request flow through these concepts:
 
 Envoy building blocks
 
-![img.png](img.png)
+![img.png](img.png) \
 It all starts with the listeners. Envoy exposes listeners that are named network locations, either an IP address and a port or a Unix Domain Socket path. Envoy receives connections and requests through listeners. Consider the following Envoy configuration:
 
 static_resources:
